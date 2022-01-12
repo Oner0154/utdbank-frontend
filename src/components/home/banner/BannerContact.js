@@ -1,4 +1,5 @@
 import React from "react";
+import BannerContactItem from "./BannerContactItem";
 
 const BannerContact = () => {
   return (
@@ -37,41 +38,25 @@ const BannerContact = () => {
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg order-md-1 order-lg-1">
-              <div className="support-group-item">
-                <div className="support-thumb">
-                  <img src="assets/images/envelop.png" alt="support" />
-                </div>
-                <div className="support-details">
-                  <h3>
-                    <a href="mailto:info@udtbank.com">info@udtbank.com</a>
-                  </h3>
-                  <p>Support 24/7</p>
-                </div>
-              </div>
+              <BannerContactItem
+                image="envelop.png"
+                title={<a href="mailto:info@udtbank.com">info@udtbank.com</a>}
+                description="Support 24/7"
+              />
             </div>
             <div className="col-sm-6 col-md-12 col-lg order-md-3 order-lg-2">
-              <div className="support-group-item">
-                <div className="support-thumb">
-                  <img src="assets/images/phone.png" alt="support" />
-                </div>
-                <div className="support-details">
-                  <h3>
-                    <a href="tel:(+00)67834598">(+00) 678 345 98</a>
-                  </h3>
-                  <p>Free Consultation</p>
-                </div>
-              </div>
+              <BannerContactItem
+                image="phone.png"
+                title={<a href="tel:(+00)67834598">(+00) 678 345 98</a>}
+                description="Free Consultation"
+              />
             </div>
             <div className="col-sm-6 col-md-12 col-lg order-md-4 order-lg-3">
-              <div className="support-group-item">
-                <div className="support-thumb">
-                  <img src="assets/images/map.png" alt="support" />
-                </div>
-                <div className="support-details">
-                  <h3>456 Labisto Parkways</h3>
-                  <p>CA, United States</p>
-                </div>
-              </div>
+              <BannerContactItem
+                image="map.png"
+                title="456 Labisto Parkways"
+                description="CA, United States"
+              />
             </div>
           </div>
         </div>
