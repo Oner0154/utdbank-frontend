@@ -2,8 +2,9 @@ import React from "react";
 import TopBar from "../components/common/TopBar";
 import Banner from "../components/home/banner/Banner";
 import BannerContact from "../components/home/banner/BannerContact";
+import Counter from "../components/home/Counter";
 import Features from "../components/home/Features";
-import HomeAboutItem from "../components/home/HomeAboutItem";
+import HomeAbout from "../components/home/HomeAbout";
 
 const HomePage = () => {
   return (
@@ -12,7 +13,8 @@ const HomePage = () => {
       <Banner />
       <BannerContact />
       <Features />
-      <HomeAboutItem />
+      <HomeAbout />
+      <Counter />
     </>
   );
 };

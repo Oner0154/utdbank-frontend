@@ -1,42 +1,69 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
 
-const HomeAboutItem = () => {
+const HomeAboutItem = ({
+  title,
+  description,
+  title1,
+  title2,
+  title3,
+  title4,
+  title5,
+  title6,
+  image,
+  type,
+}) => {
   return (
     <div className="row align-items-center">
+      {type == 2 ? (
+        <div className="col-sm-12 col-md-12 col-lg-6">
+          <div className="home-about-item home-about-image pb-30 about-image-shape">
+            <div className="home-image-content">
+              <img
+                src="assets/images/business.png"
+                alt="about"
+                className="scale-one-zero-one"
+              />
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
       <div className="col-sm-12 col-md-12 col-lg-6 order-2 order-lg-1">
-        <div className="home-about-item desk-pad-right-10 pb-30">
-          <SectionTitle
-            title="Small to medium-sized businesses"
-            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod cste et dolore magnam aliquam quaerat
-            voluptatem."
-          />
+        <div
+          className={
+            type == 1
+              ? "home-about-item desk-pad-right-10 pb-30"
+              : "home-about-item desk-pad-left-10 pb-30"
+          }
+        >
+          <SectionTitle title={title} description={description} />
 
           <div className="home-about-list">
             <div className="home-about-list-item">
               <img src="assets/images/check.png" alt="checl" />
-              International Payments
+              {title1}
             </div>
             <div className="home-about-list-item">
               <img src="assets/images/check.png" alt="checl" />
-              Request Features
+              {title2}
             </div>
             <div className="home-about-list-item">
               <img src="assets/images/check.png" alt="checl" />
-              Premium Support
+              {title3}
             </div>
             <div className="home-about-list-item">
               <img src="assets/images/check.png" alt="checl" />
-              Direct Debit
+              {title4}
             </div>
             <div className="home-about-list-item">
               <img src="assets/images/check.png" alt="checl" />
-              Automated Accounting
+              {title5}
             </div>
             <div className="home-about-list-item">
               <img src="assets/images/check.png" alt="checl" />
-              Web Design
+              {title6}
             </div>
           </div>
           <div className="home-about-animation">
@@ -49,17 +76,21 @@ const HomeAboutItem = () => {
           </div>
         </div>
       </div>
-      <div className="col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
-        <div className="home-about-item home-about-image pb-30 about-image-ellipsis">
-          <div className="home-image-content">
-            <img
-              src="assets/images/enterprise.png"
-              alt="about"
-              className="scale-one-zero-one"
-            />
+      {type == 1 ? (
+        <div className="col-sm-12 col-md-12 col-lg-6 order-1 order-lg-2">
+          <div className="home-about-item home-about-image pb-30 about-image-ellipsis">
+            <div className="home-image-content">
+              <img
+                src={`assets/images/${image}`}
+                alt="about"
+                className="scale-one-zero-one"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
