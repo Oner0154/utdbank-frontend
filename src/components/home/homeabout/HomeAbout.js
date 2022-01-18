@@ -1,5 +1,5 @@
-import React from "react";
-import HomeAboutItem from "./HomeAboutItem";
+import React from "react"
+import HomeAboutItem from "./HomeAboutItem"
 
 const HomeAbout = () => {
   return (
@@ -18,7 +18,7 @@ const HomeAbout = () => {
             title5="Automated Accounting"
             title6="Web Design"
             image="enterprise.png"
-            type="1"
+            type="2"
           />
 
           <div className="section-mtb-40">
@@ -34,7 +34,7 @@ const HomeAbout = () => {
               title5="Business Without Borders"
               title6="Web Design"
               image="business.png"
-              type="2"
+              type="1"
             />
           </div>
 
@@ -51,13 +51,13 @@ const HomeAbout = () => {
               title5="Automated Accounting"
               title6="Web Design"
               image="entrepreneur.png"
-              type="1"
+              type="2"
             />
           </div>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HomeAbout;
+export default HomeAbout

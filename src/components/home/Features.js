@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
-import SectionTitleItem from "./SectionTitleItem";
+import SectionTitleItem from "../common/SectionTitleItem";
+
 const Features = () => {
   return (
     <section className="feature-section p-tb-100 overflow-x-hidden">
@@ -9,6 +10,7 @@ const Features = () => {
           title="Our valuable features"
           description="Lorem ipsum dolor sit amet consectetur adipisicing sed do"
         />
+
         <div className="home-feature">
           <div className="home-feature-carousel owl-carousel owl-theme">
             <SectionTitleItem
@@ -18,6 +20,7 @@ const Features = () => {
                     deimod tempor incid-idunt ut dolor sit amet"
               image="file.png"
             />
+
             <SectionTitleItem
               title="Transparent Pricing"
               color="orange"
@@ -39,6 +42,7 @@ const Features = () => {
                     deimod tempor incid-idunt ut dolor sit amet"
               image="shield.png"
             />
+
             <SectionTitleItem
               title="Fully Encrypted"
               color="blue"
@@ -46,6 +50,7 @@ const Features = () => {
                     deimod tempor incid-idunt ut dolor sit amet"
               image="file.png"
             />
+
             <SectionTitleItem
               title="Transparent Pricing"
               color="orange"
@@ -53,6 +58,7 @@ const Features = () => {
                     deimod tempor incid-idunt ut dolor sit amet"
               image="hand.png"
             />
+
             <SectionTitleItem
               title="Safe and Secure"
               color="green"
@@ -60,6 +66,7 @@ const Features = () => {
                     deimod tempor incid-idunt ut dolor sit amet"
               image="megaphone.png"
             />
+
             <SectionTitleItem
               title="Instant cashout"
               color="orange"
@@ -73,4 +80,5 @@ const Features = () => {
     </section>
   );
 };
+
 export default Features;

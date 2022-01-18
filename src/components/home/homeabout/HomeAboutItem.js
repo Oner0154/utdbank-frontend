@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "../common/SectionTitle";
+import SectionTitle from "../../common/SectionTitle";
 
 const HomeAboutItem = ({
   title,
@@ -20,7 +20,7 @@ const HomeAboutItem = ({
           <div className="home-about-item home-about-image pb-30 about-image-shape">
             <div className="home-image-content">
               <img
-                src="assets/images/business.png"
+                src={`assets/images/${image}`}
                 alt="about"
                 className="scale-one-zero-one"
               />

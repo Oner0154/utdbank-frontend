@@ -51,6 +51,7 @@ const BannerContact = () => {
                 description="Free Consultation"
               />
             </div>
+
             <div className="col-sm-6 col-md-12 col-lg order-md-4 order-lg-3">
               <BannerContactItem
                 image="map.png"

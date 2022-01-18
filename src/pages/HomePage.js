@@ -1,20 +1,32 @@
 import React from "react";
-import TopBar from "../components/common/TopBar";
+import Footer from "../components/common/Footer";
+import Topbar from "../components/common/Topbar";
 import Banner from "../components/home/banner/Banner";
 import BannerContact from "../components/home/banner/BannerContact";
-import Counter from "../components/home/Counter";
+import Counter from "../components/home/counter/Counter";
+import Facility from "../components/home/Facility";
 import Features from "../components/home/Features";
-import HomeAbout from "../components/home/HomeAbout";
+import HomeAbout from "../components/home/homeabout/HomeAbout";
+import HomeContact from "../components/home/HomeContact";
+import Pricing from "../components/home/pricing/Pricing";
+import Testimonal from "../components/home/testimonal/Testimonal";
+import HomeServices from "../components/home/services/HomeServices";
 
 const HomePage = () => {
   return (
     <>
-      <TopBar />
+      <Topbar />
       <Banner />
       <BannerContact />
       <Features />
       <HomeAbout />
       <Counter />
+      <HomeServices />
+      <Pricing />
+      <Facility />
+      <HomeContact />
+      <Testimonal />
+      <Footer />
     </>
   );
 };
